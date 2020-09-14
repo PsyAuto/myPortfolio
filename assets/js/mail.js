@@ -52,7 +52,7 @@ $(function()
 
                     $.ajax({
                 type: "POST",
-                url: 'mail.php',
+                url: '../../mail.php',
                 data: $form.serialize(),
                 success: after_form_submitted,
                 dataType: 'json'
