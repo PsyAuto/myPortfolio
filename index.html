@@ -20,7 +20,7 @@
 				<nav>
 					<ul>
 						<li><a href="index.html#intro">Intro</a></li>
-						<li><a href="index.html#one">About me</a></li>
+						<li><a href="index.html#one">Βιογραφικό Σημείωμα</a></li>
 						<li><a href="portfolio.html">portfolio</a></li>
 						<li><a href="index.html#contact">Contact</a></li>
 					</ul>
@@ -41,13 +41,27 @@
 			</section>
 
 		<!-- One -->
-			<section id="one" class="main style2 right dark fullscreen">
+			<section id="one" class="main style2 left dark fullscreen">
 				<div class="content box style2">
 					<header>
-						<h2>About me</h2>
+						<h2>Βιογραφικό Σημείωμα</h2>
 					</header>
-					<p>Apart from my main occupation as a full-stack developer, I am also interested in digital art installations and dance.
-						<br>You can view my CV <a href="motivation.html">here</a>
+					<p>
+Γεννήθηκε στην Θεσσαλονίκη το 1983
+<br>Ασχολήθηκε με το ελεύθερο και γραμμικό σχέδιο στο εργαστήρι του Γεώργιου Ψαράκη τα έτη 1998-1999
+Παρακολούθησε σεμινάρια Κόμικ 2000(?) στην σχολή (?)
+<br>Φοίτησε στο Πανεπιστήμιο Ιωαννίνων, στην σχολή Επιστήμη και Τεχνολογία Υλικών τα έτη 2002-2009
+Κατά την διάρκεια της φοίτησής του συμμετείχε σαν ιδρυτικό  μέλος του Ραδιοφωνικού Συλλόγου του Πανεπιστημίου Ιωαννίνων (ΡΑΣΠΙ)
+όπου και συνέδραμε στην κατασκευή διαδικτυακού ραδιοφώνου και στην διοργάνωση μουσικών φεστιβάλ υπό την αιγίδα της Επιτροπής Λόγου και Τέχνης του Πανεπιστημίου Ιωαννίνων.
+Κατά την δραστηριότητά του εντός του ΡΑΣΠΙ δημιούργησε έντυπο υλικό με πρωτότυπα έργα του. (αφίσα)
+<br>Διδακτορικός φοιτητής στο τμήμα Νανοηλεκτρονικής  στην Ιρλανδία στο Tyndall National Institute, Cork τα έτη 2009-2014.
+<br>Μέλος της καλλιτεχνικής ομάδας Sample Studios (Κορκ, Ιρλανδία) Οκτ. 2014 – Δεκ. 2016
+<br><a href="https://www.sample-studios.com/members1.html">https://www.sample-studios.com/members1.html</a> (μέλη του Sample Studios)
+<br><a href="https://www.youtube.com/watch?v=p_o9Yd4GXqA/">https://www.youtube.com/watch?v=p_o9Yd4GXqA</a> (παρουσίαση μέλους στο Sample Studios)
+<br><a href="https://wrkshp-flamenco.tumblr.com/">https://wrkshp-flamenco.tumblr.com/</a> (Τα σεμινάρια Φλαμένκο)
+<br>Στο συγκεκριμένο στούντιο ασχολήθηκε με την μελέτη του χορού (Φλαμένκο, σύγχρονος)  αλλά και συνεργάστηκε με την χορεύτρια Mihaela Griveva στο project “Ma - Technology Gap” στο οποίο αναζητήθηκε ένας συνδυασμός χορού και ψηφιακής τεχνολογίας.
+
+						<br>You can view my proffesional CV <a href="motivation.html">here</a>
 						<br>You can view my motivation letter <a href="motivation.html">here</a>
 					</p>
 				</div>
@@ -58,8 +72,8 @@
 			<section id="work" class="main style3 primary">
 				<div class="content">
 					<header>
-						<h2><a href="portfolio.html">portfolio</a></h2>
-						<p>Here you will find my portfolio with works on digital art, painting and dancing.</p>
+							<p>Here you will find my portfolio with works on digital art, painting and dancing.</p>
+							<h2><a class="button style2" href="portfolio.html">portfolio</a></h2>
 					</header>
 				</div>
 			</section>
@@ -71,16 +85,42 @@
 						<p>stay in touch.</p>
 					</header>
 					<div class="box">
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
-								<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
-								<div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
+						<div class="container form-top">
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+									<div class="panel panel-danger">
+										<div class="panel-body">
+											<form id="reused_form">
+											 	<div class="form-group">
+											 		<label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+											 		<input type="text" name="name" class="form-control" placeholder="Enter Name">
+											 	</div>
+											 	<div class="form-group">
+											 		<label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+											 		<input type="email" name="email" class="form-control" placeholder="Enter Email" required>
+											 	</div>
+											 	<div class="form-group">
+											 		<label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
+											 		<textarea rows="3" name="message" class="form-control" placeholder="Type Your Message" required></textarea>
+											 	</div>
+
+
+											 	<div class="form-group">
+											 		<button class="btn btn-raised btn-block btn-danger">Post →</button>
+											 	</div>
+											</form>
+											<div id="error_message" style="width:100%; height:100%; display:none; ">
+											<h4>Error</h4>
+											Sorry there was an error sending your form.
+											</div>
+											<div id="success_message" style="width:100%; height:100%; display:none; ">
+											<h2>Success! Your Message was Sent Successfully.</h2>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<ul class="actions special">
-								<li><input type="submit" value="Send Message" /></li>
-							</ul>
-						</form>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -110,6 +150,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/mail.js"></script>
 
 	</body>
 </html>
