@@ -2352,7 +2352,7 @@ p.mypar {text-align: left}
 }
 
 .full-img.open{
-	transform: translate(-50%, -50%) scale(1);
+	transform: translate(-50%, -50%) scale(1.2);
 }
 
 .modal p{
@@ -2362,5 +2362,5 @@ p.mypar {text-align: left}
 	position: absolute;
 	bottom: 5%;
 	left: 50%;
-	transform: translate(-50%, -5%);
+	transform: translate(-50%, 14%);
 }
